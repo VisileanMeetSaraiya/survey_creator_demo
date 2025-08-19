@@ -174,7 +174,7 @@ button:focus-visible {
 }
 
 .svc-question__drop-indicator{
-    border: 10px solid black;
+    /* border: 10px solid black; */
     background-color: red;
 }
 
@@ -281,11 +281,35 @@ fill:#0E8BDF
 }
 
 
+/*Edit question panel from right side*/
+.spg-input:focus:not(:disabled), .spg-input.spg-dropdown:focus:not(:disabled), .spg-input.spg-dropdown:focus-within:not(:disabled), .spg-input-container:focus-within {
+    box-shadow: inset 0 0 0 var(--ctr-editor-border-width-focused, var(--sjs-stroke-x2)) var(--ctr-editor-border-color-focused, var(--sjs-primary-background-500, #0E8BDF));
+}
 
+.spg-checkbox--checked .spg-checkbox__svg {
+    opacity: 1;
+    fill: var(--ctr-checkbox-button-check-mark-color, var(--sjs-primary-background-500, #0E8BDF)) !important;
+}
+.spg-checkbox--checked .spg-checkbox__svg {
+    opacity: 1;
+    fill: var(--ctr-checkbox-button-check-mark-color, var(--sjs-primary-background-500, #0E8BDF)) !important;
+}
 
+.svc-sidebar-tabs:not(.svc-sidebar-tabs--collapsed) .svc-menu-action__button--selected {
+    display: flex;
+    padding: var(--ctr-menu-toolbar-button-padding-top, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-right, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-bottom, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-left, var(--sjs-spacing-x1));
+    justify-content: center;
+    align-items: center;
+    gap: var(--ctr-menu-toolbar-button-gap, var(--sjs-spacing-x1));
+    border-radius: var(--ctr-menu-toolbar-button-corner-radius, var(--sjs-corner-radius-x1));
+    background: var(--ctr-menu-toolbar-button-background-color-selected, var(--sjs-primary-background-10, #E6EFF8));
+    fill: var(--ctr-checkbox-button-check-mark-color, var(--sjs-primary-background-500, #0E8BDF)) !important;
+}
 
-
-
+.spg-checkbox:active .spg-checkbox__rectangle, .spg-checkbox__control:focus:not(:disabled) + .spg-checkbox__rectangle {
+    outline: 2px solid var(--ctr-checkbox-border-color-focused, var(--sjs-primary-background-500, #0E8BDF));
+    outline-offset: -2px;
+}
 /* .svc-btn {
     display: flex;
     padding: var(--ctr-button-padding-vertical, var(--sjs-spacing-x2)) var(--ctr-button-padding-horizontal, var(--sjs-spacing-x6));
