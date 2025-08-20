@@ -2,15 +2,51 @@
     fill: #0E8BDF !important;
 }
 
+.svc-toolbox__item:focus use {
+    fill: #0E8BDF !important;
+}
+
+.svc-toolbox__item--has-subitems:hover use{
+    fill: #0E8BDF !important;
+}
+
+.svc-toolbox__item--has-subitems:focus use {
+    fill: #0E8BDF !important;
+    background-color: #E6EFF8;
+    /* background-color: #; */
+}
+
+.svc-toolbox__item-submenu-button{
+    background-color: transparent;
+}
+.svc-toolbox__item-submenu-button:hover{
+    background-color: transparent;
+}
+
+/*
+-----------------final subitem button:hover inside "Left side panel"-------------------------------------------------
+*/
+.svc-toolbox__tool--has-subitems:hover > div > div > span > svg use{
+    fill: #0E8BDF !important;
+}
+.svc-toolbox__tool--has-subitems:hover > div > div > span > svg use{
+    fill: #0E8BDF !important;
+}
+
+
+
 use {
     fill: #626E76 !important;
 }
 
 
-/*Add button*/
+/*
+------------------Add button--------------------------------------------------------------------------------
+*/
 .svc-element__add-new-question.svc-btn:hover>.svc-add-new-item-button__text {
     color: #ffffff !important;
 }
+
 
 
 .svc-survey-element-toolbar__item:hover {
@@ -31,6 +67,22 @@ use {
 .svc-menu-action__button:focus-within .sv-svg-icon use {
   fill: #0E8BDF !important;
 }
+
+/* 3 dots inside Add Question btn */
+.svc-btn:hover > button>span>svg use {
+    fill: #fff !important;
+}
+
+.svc-element__question-type-selector:hover {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px azure;
+}
+
+
+
+/*
+page ? 
+*/
 
 
 .sd-body__page:focus {
@@ -65,35 +117,191 @@ use {
     background-color: #fff;
 }
 
-/* .svc-list__item--group-selected>.svc-list__item-body, .svc-list__item--group-selected:hover>.svc-list__item-body, .svc-list__item--group-selected:focus>.svc-list__item-body .sv-svg-icon use {
-    font-family: var(--ctr-font-family, var(--sjs-font-family, var(--font-family)));
-    font-size: var(--ctr-font-default-size, var(--sjs-font-size-x2));
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--ctr-font-default-line-height, var(--sjs-line-height-x3));
-    color: var(--ctr-list-item-text-color-selected-submenu, var(--sjs-layer-1-foreground-100, rgba(0, 0, 0, 0.9019607843)));
-    background: var(--ctr-list-item-background-color-selected-submenu, var(--sjs-layer-1-background-400, whitesmoke));
-    fill: #fcfeff !important; 
-} */
 
+/*
+--------------List under "Single input tab":-----------------------------------------------------------------------------
+*/
 .svc-list__item--group-selected > .svc-list__item-body .sv-svg-icon use {
     fill: #fcfeff !important;
 }
 
-.svc-list__item.svc-list__item--with-icon:hover > .svc-list__item-body .sv-svg-icon use {
+/* Selected state (always highest priority) */
+.svc-list__item--group-selected > .svc-list__item-body .sv-svg-icon use {
+    fill: #fcfeff !important;
+}
+
+/* Hover state (only if NOT selected) */
+.svc-list__item.svc-list__item--with-icon:hover:not(.svc-list__item--group-selected) > .svc-list__item-body .sv-svg-icon use {
+    fill: #0E8BDF !important;
+}
+
+
+/* 
+------------------------hover page----------------------------------------------------------------------------------
+*/
+.svc-page__content:focus{
+    box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #490615;;
+}
+
+.svc-hovered.svc-page__content {
+    box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #74BEF0;;
+}
+.svc-page__content {
+    transition-property: padding-bottom;
+    transition-duration: var(--sjs-svc-page-move-in-duration, 250ms);
+    transition-timing-function: ease-out;
+}
+
+button:focus, button:focus-visible {
+    outline: none;
+}
+
+
+/*
+--------------------Preview Page-------------------------------------------------------------------------------------------
+*/
+
+/*Main heading : "Preview, Designer, Logic ,etc. "*/
+.svc-tabbed-menu-item--selected > span{ 
+    color: #0E8BDF !important;
+}
+
+
+
+/* Selected icon in "Right side verticle bar" -> which is not keeping selected color of svg" */
+.svc-menu-action__button--selected > div > div > svg use{
     fill: #0E8BDF !important;
 }
 
 
 
+.svc-toolbox__item-title {
+    
+    color: #626E76  ;
+    
+}
+
+.svc-toolbox__item-banner > span{
+    color:black;
+}
+
+.svc-toolbar__item:is(:hover, :focus) > svg > use {
+    background-color: var(--ctr-menu-toolbar-button-background-color-hovered, var(--sjs-layer-1-background-400, whitesmoke));
+    fill: #0E8BDF !important;
+}
 
 
+/*
+----------------Last button("Preview Survey Again") - after submitting response in preview tab-------------------------------------------------------
+*/
+ .svc-btn:hover > span{
+    color:#fff
+ }
 
+ /*Star selected */
+ .sd-rating__item-star--selected > svg use{
+    fill: #0E8BDF !important;
+ }
 
+ .spg-input {
+    font-family: var(--ctr-font-family, var(--sjs-font-family, var(--font-family)));
+    font-size: var(--ctr-font-default-size, var(--sjs-font-size-x2));
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--ctr-font-default-line-height, var(--sjs-line-height-x3));
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-flex;
+    background-color: var(--ctr-editor-background-color, var(--sjs-layer-3-background-500, #f4f4f4));
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: var(--ctr-editor-corner-radius, var(--sjs-corner-radius-x1));
+    box-shadow: inset 0 0 0 var(--ctr-editor-border-width, var(--sjs-stroke-x1)) var(--ctr-editor-border-color, var(--sjs-border-10, gainsboro));
+    transition: box-shadow var(--sjs-creator-transition-duration, 150ms);
+    padding-top: calc(var(--ctr-editor-padding-top, var(--sjs-spacing-x05)) + var(--ctr-editor-content-margin-top, var(--sjs-spacing-x1)));
+    padding-right: calc(var(--ctr-editor-padding-right, var(--sjs-spacing-x05)) + var(--ctr-editor-content-margin-right, var(--sjs-spacing-x150)));
+    padding-bottom: calc(var(--ctr-editor-padding-bottom, var(--sjs-spacing-x05)) + var(--ctr-editor-content-margin-bottom, var(--sjs-spacing-x1)));
+    padding-left: calc(var(--ctr-editor-padding-left, var(--sjs-spacing-x05)) + var(--ctr-editor-content-margin-left, var(--sjs-spacing-x150)));
+    outline: none;
+    color: var(--ctr-editor-content-text-color, var(--sjs-layer-3-foreground-100, rgba(0, 0, 0, 0.9019607843)));
+    -webkit-border-radius: var(--ctr-editor-corner-radius, var(--sjs-corner-radius-x1));
+    -moz-border-radius: var(--ctr-editor-corner-radius, var(--sjs-corner-radius-x1));
+    -ms-border-radius: var(--ctr-editor-corner-radius, var(--sjs-corner-radius-x1));
+    -o-border-radius: var(--ctr-editor-corner-radius, var(--sjs-corner-radius-x1));
+}
+
+/*
+---------------Search bar---------------------------------------------------
+*/
+/* .svc-toolbox .svc-search__input {
+    color: #093B5C;
+} */
+
+/*
+----------------Right side Bar----------------------------------------------
+*/
+.spg-dropdown .sd-editor-button-item:hover, .spg-dropdown .sd-editor-button-item:focus {
+    border-radius: var(--ctr-editor-button-corner-radius, var(--sjs-corner-radius-x05));
+    background: var(--ctr-editor-button-background-color-hovered, #E6EFF8);
+    transition: background var(--sjs-creator-transition-duration, 150ms);
+}
+
+.spg-dropdown .sd-editor-button-item:hover > svg use, .spg-dropdown .sd-editor-button-item:focus > svg use{
+    fill:#0E8BDF !important;
+}
+
+/*
+ ----------------Right Side bar --->> Input's---------------------------------
+*/
+ /* Hover (default) */
+.spg-input:hover:not(:disabled),
+.spg-input.spg-dropdown:hover:not(:disabled) {
+  box-shadow: inset 0 0 0 var(--ctr-editor-border-width-focused, var(--sjs-stroke-x2)) #626E76;
+}
+
+/* Focus */
+.spg-input:focus:not(:disabled),
+.spg-input.spg-dropdown:focus:not(:disabled),
+.spg-input.spg-dropdown:focus-within:not(:disabled),
+.spg-input-container:focus-within {
+  box-shadow: inset 0 0 0 var(--ctr-editor-border-width-focused, var(--sjs-stroke-x2)) #1793E6;
+}
+
+/* Active */
+.spg-input:active:not(:disabled),
+.spg-input:focus:hover:not(:disabled),
+.spg-input:active:hover:not(:disabled) {
+  box-shadow: inset 0 0 0 var(--ctr-editor-border-width-focused, var(--sjs-stroke-x2)) #1793E6;
+}
 
 
 
 /* 
-.svc-item-value-controls__remove:not(.svc-item-value-controls__button--disabled):hover, .svc-item-value-controls__remove:not(.svc-item-value-controls__button--disabled):focus {
-    background-color: var(--ctr-survey-action-button-background-color-hovered-negative, var(--sjs-semantic-red-background-10, #0E8BDF));
+.svc-menu-action__button--selected{
+    background-color: #E0E5E9;
+} */
+.svc-sidebar-tabs:not(.svc-sidebar-tabs--collapsed) .svc-menu-action__button--selected {
+	display: flex;
+	padding: var(--ctr-menu-toolbar-button-padding-top, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-right, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-bottom, var(--sjs-spacing-x1)) var(--ctr-menu-toolbar-button-padding-left, var(--sjs-spacing-x1));
+	justify-content: center;
+	align-items: center;
+	gap: var(--ctr-menu-toolbar-button-gap, var(--sjs-spacing-x1));
+	border-radius: var(--ctr-menu-toolbar-button-corner-radius, var(--sjs-corner-radius-x1));
+	background: var(--ctr-menu-toolbar-button-background-color-selected, var(--sjs-primary-background-10, #E0E5E9));
+}
+
+/* .svc-sidebar-tabs:is(.svc-sidebar-tabs--collapsed) .svc-menu-action__button--selected > div > div > svg use {
+  fill: #df0e81 !important;
+}  */
+survey-creator :not(.svd-simulator-main *), .svc-creator :not(.svd-simulator-main *) use {
+	scrollbar-width: thin;
+	scrollbar-color: var(--ctr-scrollbar-background-color, var(--sjs-border-25-overlay, rgba(0, 0, 0, 0.1490196078))) rgba(0,0,0,0);
+    fill: #626E76 !important;
+}
+
+/*Page's */
+/* .svc-page__content:active {
+    box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #ff083e;
 } */

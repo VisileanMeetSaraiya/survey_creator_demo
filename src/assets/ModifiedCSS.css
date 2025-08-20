@@ -1,0 +1,106 @@
+/* ============================================================
+   Default SVG color (scoped, no global `use`)
+============================================================ */
+.svc-toolbox__item use,
+.svc-toolbar__item use,
+.svc-menu-action__button use,
+.svc-list__item-body .sv-svg-icon use {
+  fill: #626E76;
+}
+
+/* ============================================================
+   Hover states
+============================================================ */
+.svc-toolbox__item:hover use,
+.svc-toolbox__item--has-subitems:hover use,
+.svc-toolbar__item:hover > svg > use,
+.svc-survey-element-toolbar__item:hover .sv-svg-icon use,
+.svc-menu-action__button:hover .sv-svg-icon use,
+.svc-btn:hover > button > span > svg use,
+.svc-btn:hover > span,
+.svc-list__item.svc-list__item--with-icon:hover:not(.svc-list__item--group-selected) 
+  > .svc-list__item-body .sv-svg-icon use,
+.svc-element__add-new-question.svc-btn:hover > .svc-add-new-item-button__text {
+  fill: #0E8BDF;
+  color: #0E8BDF;
+}
+
+/* Hover BG (buttons, toolbars, etc.) */
+.svc-survey-element-toolbar__item:hover {
+  background-color: #E6EFF8;
+}
+
+.svc-btn:hover {
+  outline: solid calc(0.25 * (var(--sjs-base-unit, var(--base-unit, 8px)))) #0E8BDF;
+  transition: background-color var(--sjs-creator-transition-duration, 150ms);
+}
+
+.spg-button-group__item--hover:hover {
+  background-color: #fff;
+  box-shadow: 0 0 0 var(--ctr-survey-page-border-width-selected, var(--lbr-stroke-x2)) #E0E5E9;
+}
+
+/* Special hover (like stars, 3 dots) */
+.sd-btn--action:hover {
+  color: #fff;
+  background-color: #0E8BDF;
+}
+.svc-element__question-type-selector:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px azure;
+}
+
+/* ============================================================
+   Focus + Active states (always override hover)
+============================================================ */
+.svc-toolbox__item:focus use,
+.svc-toolbox__item--has-subitems:focus use,
+.svc-toolbar__item:focus > svg > use,
+.svc-survey-element-toolbar__item:focus .sv-svg-icon use,
+.svc-menu-action__button:focus .sv-svg-icon use,
+.svc-menu-action__button:focus-within .sv-svg-icon use,
+.svc-list__item-body:focus span .sv-svg-icon use,
+.sd-body__page:focus,
+.svc-page__content:focus,
+button:focus,
+button:focus-visible {
+  fill: #0E8BDF;
+  background-color: transparent;
+  outline: none;
+  box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #1793E6;
+}
+
+/* Keep active blue even if hovered */
+.svc-toolbox__item:active use,
+.svc-toolbox__item:focus:hover use,
+.svc-toolbox__item:active:hover use {
+  fill: #0E8BDF;
+}
+
+/* ============================================================
+   Selected states (always highest priority)
+============================================================ */
+.svc-list__item--group-selected > .svc-list__item-body .sv-svg-icon use,
+.svc-menu-action__button--selected > div > div > svg use,
+.sd-rating__item-star--selected > svg use,
+.svc-tabbed-menu-item--selected > span {
+  fill: #0E8BDF;
+  color: #0E8BDF;
+}
+
+/* ============================================================
+   Misc styles
+============================================================ */
+.svc-toolbox__item-title {
+  color: #626E76;
+}
+.svc-toolbox__item-banner > span {
+  color: black;
+}
+.svc-hovered.svc-page__content {
+  box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #74BEF0;
+}
+.sd-btn--action {
+  color: #0E8BDF;
+  background-color: #fff;
+}

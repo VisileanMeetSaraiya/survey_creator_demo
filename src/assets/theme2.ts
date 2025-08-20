@@ -12,7 +12,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-layer-1-background-500": "#fff",
     "--sjs-layer-1-background-400": "#E6EFF8",
     "--sjs-layer-1-foreground-100": "#E6EFF8",
-    "--sjs-layer-1-foreground-50": "#0077ff99",
+    "--sjs-layer-1-foreground-50": "#626E76",
     "--sjs-layer-3-background-500": "#ebebeb",
     "--sjs-layer-3-foreground-100": "#000000",
     "--sjs-layer-3-foreground-50": "#00000099",
@@ -20,7 +20,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-layer-2-background-400": "#DCDCDC",
     "--sjs-special-haze":
       "hsl(from var(--sjs-special-background) calc(h - var(--sjs-special-haze-deltaH)) calc(s - var(--sjs-special-haze-deltaS)) calc(l - var(--sjs-special-haze-deltaL)) / calc(1 - var(--sjs-special-haze-deltaAlpha)))",
-    "--sjs-border-25": "#000000ff",
+    "--sjs-border-25": "#585757d3",
     "--sjs-border-10": "#E0E5E9",
     "--sjs-primary-background-500": "#626E76",
     "--sjs-primary-background-10":"#E6EFF8",
@@ -99,7 +99,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-editorpanel-backcolor": "#E0E5E9",
     "--sjs-editorpanel-hovercolor": "#f9f3f5ff",
     "--sjs-questionpanel-backcolor": "#E6EFF8",
-    "--sjs-questionpanel-hovercolor": "#41323dff",
+    "--sjs-questionpanel-hovercolor": "#0E8BDF",
     "--sjs-font-family": "Open Sans",
     "--sjs-font-size": "16px",
     "--sjs-corner-radius": "6px",
@@ -123,7 +123,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-general-backcolor-dim-light": "#F9FAFC",
     "--sjs-general-backcolor-dim-dark": "#F3F5F9",
     "--sjs-general-backcolor-dim": "#F3F5F9",
-    "--sjs-general-forecolor": "#000000",
+    "--sjs-general-forecolor": "#0E8BDF",
     "--sjs-general-forecolor-light": "#737373",
     "--sjs-general-dim-forecolor": "#000000",
     "--sjs-general-dim-forecolor-light": "#737373",
@@ -156,7 +156,7 @@ export const modifiedTheme: ITheme = {
     "--ctr-toolbox-item-banner-display":"#093B5C",
     "--ctr-toolbox-item-background-color-hovered":"#E6EFF8",
     "--ctr-toolbox-item-text-color-hovered":"#0E8BDF",
-    "--ctr-menu-toolbar-button-text-color":"#0E588A",
+    "--ctr-menu-toolbar-button-text-color":"#626E76",
     "--ctr-button-text-color":"#0E8BDF",
     "--ctr-button-text-color-hovered":"#fff",
     "--ctr-button-background-color-hovered":"#0E8BDF",
@@ -179,7 +179,9 @@ export const modifiedTheme: ITheme = {
     "--ctr-editor-background-color":"#fff",
     // "--ctr-survey-page-border-width-hovered":"#7E8C96"
     "--ctr-survey-page-border-color-selected":"#000000ff",
-    "--ctr-survey-page-border-color-hover":"#7E8C96",
-    "--ctr-survey-ranking-item-text-color-inactive":"#7E8C96"
+    "--ctr-survey-page-border-color-hover":"#74BEF0",
+    "--ctr-survey-ranking-item-text-color-inactive":"#7E8C96",
+    "--ctr-menu-toolbar-button-icon-color":"#a71cd1ff",
+    "--ctr-toolbox-search-text-color":"#000000ff"
   }
 };

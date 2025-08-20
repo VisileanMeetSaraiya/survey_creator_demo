@@ -54,7 +54,7 @@ const CreatorPage = (props: any) => {
   }, [creator, props.options, props.json]);
 
   return (
-    <div style={{ height: "100vh", width: "100%" }} className="container">
+    <div >
       {creator && <SurveyCreatorComponent creator={creator} />}
     </div>
   );
