@@ -118,7 +118,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-border-default": "#E0E5E9",
     "--sjs-border-light": "#E0E6E9",
     "--sjs-border-inside": "#CFD8DC",
-    "--sjs-general-backcolor": "#140202ff",
+    "--sjs-general-backcolor": "#f3f5f9",
     "--sjs-general-backcolor-dark": "#F8F9FB",
     "--sjs-general-backcolor-dim-light": "#F9FAFC",
     "--sjs-general-backcolor-dim-dark": "#F3F5F9",
@@ -182,6 +182,7 @@ export const modifiedTheme: ITheme = {
     "--ctr-survey-page-border-color-hover":"#74BEF0",
     "--ctr-survey-ranking-item-text-color-inactive":"#7E8C96",
     "--ctr-menu-toolbar-button-icon-color":"#a71cd1ff",
-    "--ctr-toolbox-search-text-color":"#000000ff"
+    "--ctr-toolbox-search-text-color":"#000000ff",
+    // "--ctr-toolbox-item-background-color-hovered":"#E6EFF8"
   }
 };
