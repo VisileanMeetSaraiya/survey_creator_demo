@@ -12,6 +12,7 @@ export const SurveyComponentWithResponse = (props: any) => {
     survey.data = response;
     survey.showCompleteButton = false;
     survey.applyTheme(surveyComponentTheme);
+    // survey.showPreview();
 
     return (
         <Survey model={survey} />

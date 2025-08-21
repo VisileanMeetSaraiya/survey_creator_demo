@@ -1,5 +1,5 @@
 import SurveyCreatorRenderComponent from '../components/CreatorPage2';
-import "../App.css";
+// import "../App.css";
 import "../index.css";
 export const CreatorPage = () => {
   return (

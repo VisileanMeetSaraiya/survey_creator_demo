@@ -77,7 +77,7 @@ export const ResponseListPage = () => {
                 {
                     finalResponses && finalResponses.length > 0 && finalResponses.map((val, index) => (
                         <div>
-                            <div>Checklist : {index}</div>
+                            <div className="res">Checklist : {index}</div>
                             <SurveyComponentWithResponse data={val} key={index} />
                         </div>))
                 }

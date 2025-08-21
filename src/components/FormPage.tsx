@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import { SurveyComponent } from './SurveyComponent';
-import "../App.css";
+import "../assets/FormPage.css";
 
 const userId = 7;
 
@@ -20,15 +20,14 @@ export const FormPage = () => {
 
   return (
     <div
-    className='main-div'
+      className='main-div'
     >
       {structureList && structureList.length > 0 ? (
         structureList.map((singleStructure: any, index: number) => (
 
           <div
             key={index}
-
-            >
+          >
             <div className='error-notification'>Checklist : {index + 1}</div>
             <div style={{
               flex: 1,
@@ -36,10 +35,7 @@ export const FormPage = () => {
               minWidth: "300px",
               color: "black"  // safe on mobiles
             }}
-              
             >
-
-
               <SurveyComponent
                 surveyJson={singleStructure.checkListStructureJson}
                 checkListId={singleStructure.id}

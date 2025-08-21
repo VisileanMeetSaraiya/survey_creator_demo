@@ -7,13 +7,15 @@ import { ResponseListPage } from './components/ResponseListPage';
 function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' Component={Layout}>
-          <Route path='/creator' Component={CreatorPage} />
-          <Route path='/checklist' Component={FormPage} />
-          <Route path='/responses' Component={ResponseListPage} />
-        </Route>
-      </Routes>
+      <div className="page">
+        <Routes>
+          <Route path='/' Component={Layout}>
+            <Route path='/creator' Component={CreatorPage} />
+            <Route path='/checklist' Component={FormPage} />
+            <Route path='/responses' Component={ResponseListPage} />
+          </Route>
+        </Routes>
+      </div>
     </>
   )
 }
