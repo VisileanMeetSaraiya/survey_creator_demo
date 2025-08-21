@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.navigation-panel {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move to the next line */
+  gap: 1rem;
+  border: 2px solid black;
+  justify-content: center; /* Center navigation links */
+  padding: 1rem;
+}
+
+.link {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text wrapping inside link */
+}
+
+.outlet-body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}

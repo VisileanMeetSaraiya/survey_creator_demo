@@ -1,6 +1,6 @@
-import React from 'react'
 import SurveyCreatorRenderComponent from '../components/CreatorPage2';
-
+import "../App.css";
+import "../index.css";
 export const CreatorPage = () => {
   return (
     <>
@@ -13,8 +13,8 @@ export const CreatorPage = () => {
           width: "100%"
         }}
       >
-        <div style={{ width: "100%", height: "100%" }}>
-          <h2>Survey Builder</h2>
+        <div style={{ width: "090%", height: "100%" }}>
+          {/* <h2>Survey Builder</h2> */}
           <SurveyCreatorRenderComponent />
         </div>
       </div>

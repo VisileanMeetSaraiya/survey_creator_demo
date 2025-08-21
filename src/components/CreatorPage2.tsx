@@ -1,14 +1,20 @@
-import { useEffect } from "react";
 import { SurveyCreator, SurveyCreatorComponent } from "survey-creator-react";
 import "survey-core/survey-core.min.css";
 import "survey-creator-core/survey-creator-core.min.css";
 import SurveyCreatorTheme from "survey-creator-core/themes";
 import { registerCreatorTheme } from "survey-creator-core";
+import axios from "axios";
+
+
 import { modifiedTheme } from "../assets/theme2";
+import "../assets/creator.css";
+
+// import { modifiedThemeFromComponent } from "../assets/SurveyCreatorTheme";
+
 // import "../assets/demo2.css";
 // import "../assets/ModifiedCSS.css"
-import "../assets/creator.css";
-import axios from "axios";
+// import { FlatDarkPanelless, PlainDark } from "survey-core/themes";
+
 
 registerCreatorTheme(SurveyCreatorTheme); // Add predefined Survey 
 
@@ -25,13 +31,15 @@ function SurveyCreatorRenderComponent() {
         isAutoSave: false,
         showJSONEditorTab: false,
     });
+
     const localStorageKey = "userSurveyCreatorTheme";
     const savedTheme = localStorage.getItem(localStorageKey);
 
     creator.applyCreatorTheme(modifiedTheme ? modifiedTheme : SurveyCreatorTheme.DefaultDark);
+    // creator.applyCreatorTheme(modifiedThemeFromComponent ? modifiedThemeFromComponent : SurveyCreatorTheme.DefaultDark);
+    
     creator.showSaveButton = true;
 
-    // creator.sa
     creator.saveSurveyFunc = async (
         saveNo: number,
         callback: (saveNo: number, success: boolean) => void

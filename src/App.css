@@ -45,3 +45,17 @@
   padding: 0px;
   margin: 0px;
 }
+.error-notification{
+  color:red;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.container{
+  width: 100%;
+}
+
+.main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

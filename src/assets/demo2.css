@@ -305,3 +305,32 @@ survey-creator :not(.svd-simulator-main *), .svc-creator :not(.svd-simulator-mai
 /* .svc-page__content:active {
     box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #ff083e;
 } */
+
+
+/*S
+
+
+
+Somewhere it is messing with left alignment of "Add Question " btn
+
+
+
+
+*/
+.sv-action-bar {
+    display: flex;
+    box-sizing: content-box;
+    position: relative;
+    align-items: center;
+    /* margin-left: auto; */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.svc-page__footer {
+    overflow: visible;
+    margin-left: calc(3*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    margin-right: calc(3*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    margin-top: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    gap: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))));
+}
