@@ -187,6 +187,11 @@ export const modifiedTheme: ITheme = {
 
 
     // small dots for navigating pages
-    "--ctr-page-navigator-item-text-color-hovered":"#093B5C"
+    "--ctr-page-navigator-item-text-color-hovered":"#093B5C",
+
+
+    //page hover
+    "--ctr-survey-page-border-width-selected":"#E0E5E9",
+    "--ctr-survey-page-border-width-hovered":"#E0E5E9"
   }
 };

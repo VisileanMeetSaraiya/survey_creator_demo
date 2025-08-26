@@ -1,8 +1,15 @@
-.container{
+.container {
     width: 100%;
 }
-.res{
+
+.res {
     background-color: white;
-    color: rgb(207, 22, 22);
+    color: #093B5C;
+    font-size: x-large;
+}
+
+.prev-res {
+    background-color: white;
+    color: #0E8BDF;
     font-size: x-large;
 }

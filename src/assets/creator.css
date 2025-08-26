@@ -140,9 +140,9 @@ page ?
 /* 
 ------------------------hover page----------------------------------------------------------------------------------
 */
-.svc-page__content:focus{
+/* .svc-page__content:focus{
     box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #490615;;
-}
+} */
 
 /* .svc-hovered.svc-page__content {
     box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #d36a2c;;
@@ -183,7 +183,7 @@ button:focus, button:focus-visible {
 }
 
 .svc-toolbar__item:is(:hover, :focus) > svg > use {
-    background-color: var(--ctr-menu-toolbar-button-background-color-hovered, var(--sjs-layer-1-background-400, whitesmoke));
+    background-color: var(--ctr-menu-toolbar-button-background-color-hovered, var(--sjs-layer-1-background-400, #fff));
     fill: #0E8BDF !important;
 }
 

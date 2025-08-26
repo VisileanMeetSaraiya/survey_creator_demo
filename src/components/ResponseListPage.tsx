@@ -72,12 +72,12 @@ export const ResponseListPage = () => {
     }, []);
     return (
         <div>
-            <div className="res">Responses </div>
+            <div className="prev-res">Previous Responses</div>
             <div className="container">
                 {
                     finalResponses && finalResponses.length > 0 && finalResponses.map((val, index) => (
                         <div>
-                            <div className="res">Checklist : {index}</div>
+                            <div className="res">Checklist : {index+1}</div>
                             <SurveyComponentWithResponse data={val} key={index} />
                         </div>))
                 }

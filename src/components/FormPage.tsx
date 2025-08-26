@@ -28,7 +28,7 @@ export const FormPage = () => {
           <div
             key={index}
           >
-            <div className='error-notification'>Checklist : {index + 1}</div>
+            <div className='res'>Checklist : {index + 1}</div>
             <div style={{
               flex: 1,
               width: "100%",
