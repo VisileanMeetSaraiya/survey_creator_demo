@@ -13,6 +13,7 @@
 .svc-toolbox__item--has-subitems:focus use {
     fill: #0E8BDF !important;
     background-color: #E6EFF8;
+
     /* background-color: #; */
 }
 
@@ -143,9 +144,9 @@ page ?
     box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #490615;;
 }
 
-.svc-hovered.svc-page__content {
-    box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #74BEF0;;
-}
+/* .svc-hovered.svc-page__content {
+    box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #d36a2c;;
+} */
 
 
 button:focus, button:focus-visible {
@@ -295,4 +296,19 @@ button:focus, button:focus-visible {
 /*Page's */
 /* .svc-page__content:active {
     box-shadow: 0 0 0 var(--ctr-survey-page-border-width-hovered, var(--lbr-stroke-x2)) #ff083e;
+} */
+
+
+/************************* Temporery FiXXXXXX ********************************/
+
+.svc-page__footer {
+    overflow: visible !important;
+    margin-left: calc(3*(var(--sjs-base-unit, var(--base-unit, 8px)))) !important;
+    margin-right: calc(3*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    margin-top: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))));
+    gap: calc(2*(var(--sjs-base-unit, var(--base-unit, 8px))));
+}
+
+/* .svc-element__add-new-question.svc-btn {
+    margin-left: 24px;
 } */

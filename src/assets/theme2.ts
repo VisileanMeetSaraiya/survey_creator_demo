@@ -98,7 +98,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-special-glow-deltaL": "73.34",
     "--sjs-editorpanel-backcolor": "#E0E5E9",
     "--sjs-editorpanel-hovercolor": "#f9f3f5ff",
-    "--sjs-questionpanel-backcolor": "#E6EFF8",
+    "--sjs-questionpanel-backcolor": "#fff",
     "--sjs-questionpanel-hovercolor": "#0E8BDF",
     "--sjs-font-family": "Open Sans",
     "--sjs-font-size": "16px",
@@ -112,7 +112,7 @@ export const modifiedTheme: ITheme = {
     "--sjs-shadow-inner": "inset 0px 1px 2px #00000014",
     "--sjs-shadow-small-reset": "0 0 0 #00000000",
     "--sjs-shadow-inner-reset": "inset 0 0 0 #00000000",
-    "--sjs-font-questiondescription-color": "#e63c3cff",
+    "--sjs-font-questiondescription-color": "#737373",
     "--sjs-font-editorfont-color": "#252525",
     "--sjs-font-editorfont-placeholdercolor": "#737373",
     "--sjs-border-default": "#E0E5E9",
@@ -184,5 +184,9 @@ export const modifiedTheme: ITheme = {
     "--ctr-menu-toolbar-button-icon-color":"#a71cd1ff",
     "--ctr-toolbox-search-text-color":"#000000ff",
     // "--ctr-toolbox-item-background-color-hovered":"#E6EFF8"
+
+
+    // small dots for navigating pages
+    "--ctr-page-navigator-item-text-color-hovered":"#093B5C"
   }
 };

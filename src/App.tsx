@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { FormPage } from './components/FormPage';
 import { Layout } from './components/Layout';
 import { ResponseListPage } from './components/ResponseListPage';
+
 function App() {
   return (
     <>
@@ -11,6 +12,8 @@ function App() {
         <Routes>
           <Route path='/' Component={Layout}>
             <Route path='/creator' Component={CreatorPage} />
+            <Route path='/creator2' Component={CreatorPage} />
+
             <Route path='/checklist' Component={FormPage} />
             <Route path='/responses' Component={ResponseListPage} />
           </Route>

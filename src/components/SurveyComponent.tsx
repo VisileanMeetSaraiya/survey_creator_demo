@@ -7,10 +7,10 @@ import "../assets/SurveyComponentCSS.css"
 import { surveyComponentTheme } from '../assets/SurveyComponentTheme';
 
 
-const userId = 7;
+const userId = 8;
 
 export const SurveyComponent = (props: any) => {
-    // const [checkListId, setCheckListId] = useState(props.checkListId ?? -1);
+
     const checkListId = (props.checkListId ?? -1);
     const survey = new Model(props.surveyJson);
 
@@ -19,7 +19,7 @@ export const SurveyComponent = (props: any) => {
     survey.onComplete.add((sender) => {
         if (checkListId !== -1) {
             const postResponse = async () => {
-                const response = await axios.post("http://localhost:8080/response", {
+                const response = await axios.post("http://192.168.1.192:8080/response", {
                     "response": sender.data,
                     "userId": userId,
                     "checkListId": checkListId

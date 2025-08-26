@@ -23,7 +23,7 @@ interface FinalObject {
     userId: number
 }
 
-const userId = 7;
+const userId = 8;
 
 export const ResponseListPage = () => {
 
@@ -32,7 +32,7 @@ export const ResponseListPage = () => {
     useEffect(() => {
         try {
             const fetchData = async () => {
-                const apiStrutureList = await axios.get(`http://localhost:8080/checklist/user/${userId}`);
+                const apiStrutureList = await axios.get(`http://192.168.1.192:8080/checklist/user/${userId}`);
                 const strutureList = apiStrutureList.data;
 
                 const structureMap = new Map<number, string>(); 
@@ -46,7 +46,7 @@ export const ResponseListPage = () => {
                 console.log(structureMap);
 
 
-                const res = await axios.get(`http://localhost:8080/response/user/${userId}`);
+                const res = await axios.get(`http://192.168.1.192:8080/response/user/${userId}`);
                 const responseList = res.data;
 
                 /*Merge 2 arraya objects */

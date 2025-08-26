@@ -6,7 +6,7 @@ export const Layout = () => {
         <div className="navigation">
             <nav className='navigation-panel'>
                 <Link to="/creator" className='link'>Creator</Link>
-                <Link to="/checklist" className='link'>Checklist</Link>
+                <Link to="/checklist" className='link'>Form Fill-up</Link>
                 <Link to="/responses" className='link'>Responses</Link>
             </nav>
         </div>

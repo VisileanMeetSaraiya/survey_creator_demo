@@ -1,9 +1,17 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: aliceblue;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .navigation-panel {
@@ -11,9 +19,8 @@
     flex-wrap: wrap;
     /* Allows items to move to the next line */
     gap: 1rem;
-    border: 2px solid black;
+    border: 2px solid #69696d;
     justify-content: center;
-    /* Center navigation links */
     padding: 1rem;
 }
 
@@ -47,7 +54,6 @@
 
 .outlet-body {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
 }
+

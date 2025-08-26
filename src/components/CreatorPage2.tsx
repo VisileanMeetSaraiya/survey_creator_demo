@@ -9,18 +9,11 @@ import axios from "axios";
 import { modifiedTheme } from "../assets/theme2";
 import "../assets/creator.css";
 
-// import { modifiedThemeFromComponent } from "../assets/SurveyCreatorTheme";
-
-// import "../assets/demo2.css";
-// import "../assets/ModifiedCSS.css"
-// import { FlatDarkPanelless, PlainDark } from "survey-core/themes";
-
-
 registerCreatorTheme(SurveyCreatorTheme); // Add predefined Survey 
 
 const createFunction = async (json: any): Promise<void> => {
-    await axios.post("http://localhost:8080/checklist/withuser", {
-        "userId": 7,
+    await axios.post("http://192.168.1.192:8080/checklist/withuser", {
+        "userId": 8,
         "structure": json,
     });
 };

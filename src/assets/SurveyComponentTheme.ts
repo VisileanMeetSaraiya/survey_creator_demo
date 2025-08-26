@@ -1,7 +1,6 @@
 import type { ITheme } from "survey-core";
 
-export const surveyComponentTheme: ITheme =
-{
+export const surveyComponentTheme: ITheme = {
     "themeName": "default",
     "colorPalette": "light",
     "isPanelless": false,

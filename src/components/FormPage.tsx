@@ -3,14 +3,14 @@ import { useEffect, useState } from 'react'
 import { SurveyComponent } from './SurveyComponent';
 import "../assets/FormPage.css";
 
-const userId = 7;
+const userId = 8;
 
 export const FormPage = () => {
   const [structureList, setStructureList] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const structureResponse = await axios.get(`http://localhost:8080/checklist/user/${userId}`);
+      const structureResponse = await axios.get(`http://192.168.1.192:8080/checklist/user/${userId}`);
 
       const res = structureResponse.data;
       setStructureList(res);

@@ -8,13 +8,12 @@ export const CreatorPage = () => {
         className="container"
         style={{
           display: "grid",
-          placeItems: "center",   // shorthand for alignItems + justifyContent
+          placeItems: "center",   
           height: "100vh",
           width: "100%"
         }}
       >
-        <div style={{ width: "090%", height: "100%" }}>
-          {/* <h2>Survey Builder</h2> */}
+        <div style={{ width: "100%", height: "100%" }}>
           <SurveyCreatorRenderComponent />
         </div>
       </div>
